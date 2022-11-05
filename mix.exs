@@ -39,6 +39,7 @@ defmodule Jalka2022.MixProject do
       {:ecto_sql, "~> 3.9.0"},
       {:postgrex, ">= 0.16.5"},
       {:phoenix_live_view, "~> 0.18.3"},
+      {:phoenix_live_reload, "~> 1.4"},
       {:floki, ">= 0.34.0", only: :test},
       {:dotenv_parser, "~> 2.0", only: :dev},
       {:phoenix_html, "~> 3.2"},

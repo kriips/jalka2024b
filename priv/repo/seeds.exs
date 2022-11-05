@@ -23,7 +23,13 @@ if Code.ensure_compiled?(Jalka2022.Football.Team) &&
      Jalka2022.Football.Team |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
   Enum.each(Jason.decode!(File.read!('priv/repo/data/teams.json')), fn attrs ->
     %Jalka2022.Football.Team{}
-    |> Jalka2022.Football.Team.changeset(attrs)
+    |> Jalka2022.Football.Team.changeset(%{
+      id: Map.get(attrs, "id"),
+      name: Map.get(attrs, "name"),
+      code: Map.get(attrs, "tla"),
+      flag: Map.get(attrs, "crest"),
+      group: Map.get(attrs, "group")
+    })
     |> Jalka2022.Repo.insert!()
   end)
 end

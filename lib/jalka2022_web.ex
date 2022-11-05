@@ -46,7 +46,7 @@ defmodule Jalka2022Web do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {Jalka2022Web.LayoutView, "live.html"}
+        layout: {Jalka2022Web.LayoutView, :live}
 
       unquote(view_helpers())
       import Jalka2022Web.LiveHelpers

@@ -14,6 +14,7 @@
     <%= password_input f, :password, value: input_value(f, :password), required: true, aria_label: "Parool", type: "password", phx_debounce: "blur" %>
     <%= error_tag f, :password %>
     <%= submit "Registreeri", phx_disable_with: "Registreerin..." %>
+    </form>
 
     <p>
         <%= link "Sisene", to: Routes.user_session_path(@socket, :new) %>
