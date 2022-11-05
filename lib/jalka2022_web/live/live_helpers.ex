@@ -1,5 +1,6 @@
 defmodule Jalka2022Web.LiveHelpers do
   import Phoenix.LiveView
+  import Phoenix.Component
   alias Jalka2022.Accounts
   alias Jalka2022.Accounts.User
   alias Jalka2022Web.Router.Helpers, as: Routes

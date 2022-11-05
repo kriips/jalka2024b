@@ -2,10 +2,9 @@ defmodule Jalka2022Web.FootballLive.Game do
   use Phoenix.LiveView
 
   alias Jalka2022Web.Resolvers.FootballResolver
-  alias Jalka2022Web.LiveHelpers
 
   @impl true
-  def mount(params, session, socket) do
+  def mount(params, _session, socket) do
     {:ok,
      socket
      |> assign(

@@ -88,6 +88,7 @@ defmodule Jalka2022Web do
 
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
+      import Phoenix.Component
 
       import Jalka2022Web.ErrorHelpers
       import Jalka2022Web.Gettext

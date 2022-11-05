@@ -1,15 +1,14 @@
 defmodule Jalka2022.MixProject do
   use Mix.Project
-  import Config
 
   def project do
     [
       app: :jalka2022,
       version: "0.1.0",
       elixir: "~> 1.14.1",
-      elixirc_paths: elixirc_paths(config_env()),
-      compilers: [:phoenix, :gettext] ++ Mix.compilers(),
-      start_permanent: config_env() == :prod,
+      elixirc_paths: elixirc_paths(Mix.env()),
+      compilers: [:phoenix] ++ Mix.compilers(),
+      start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
     ]
@@ -35,20 +34,21 @@ defmodule Jalka2022.MixProject do
   defp deps do
     [
       {:bcrypt_elixir, "~> 3.0.1"},
-      {:phoenix, "~> 1.6"},
+      {:phoenix, "~> 1.6.15"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.9.0"},
       {:postgrex, ">= 0.16.5"},
-      {:phoenix_live_view, "~> 0.18.2"},
-      {:floki, ">= 0.33.1", only: :test},
-      {:phoenix_html, "~> 3.1"},
-      {:phoenix_live_dashboard, "~> 0.7.1"},
+      {:phoenix_live_view, "~> 0.18.3"},
+      {:floki, ">= 0.34.0", only: :test},
+      {:dotenv_parser, "~> 2.0", only: :dev},
+      {:phoenix_html, "~> 3.2"},
+      {:phoenix_live_dashboard, "~> 0.7.2"},
       {:telemetry_metrics, "~> 0.6.1"},
       {:telemetry_poller, "~> 1.0.0"},
       {:gettext, "~> 0.20.0"},
       {:jason, "~> 1.4.0"},
-      {:plug_cowboy, "~> 2.5.2"},
-      {:bamboo, "~> 2.2.0"}
+      {:plug_cowboy, "~> 2.6"},
+      {:bamboo, "~> 2.2"}
     ]
   end
 

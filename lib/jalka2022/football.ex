@@ -84,7 +84,7 @@ defmodule Jalka2022.Football do
 
   def change_score(
         %{
-          result: result,
+          result: _result,
           user_id: user_id,
           match_id: match_id,
           home_score: _home_score,
