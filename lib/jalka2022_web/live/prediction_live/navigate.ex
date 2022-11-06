@@ -13,13 +13,13 @@ defmodule Jalka2022Web.UserPredictionLive.Navigate do
     progress_percentage = progress_percentage(progress)
 
     playoffs_disabled =
-      case progress < 36 do
+      case progress < 48 do
         true -> "disabled"
         _ -> ""
       end
 
     playoffs_filled =
-      case progress == 67 do
+      case progress == 79 do
         true -> ""
         _ -> "button-outline"
       end
@@ -66,6 +66,6 @@ defmodule Jalka2022Web.UserPredictionLive.Navigate do
   end
 
   defp progress_percentage(progress) do
-    progress * 100 / 67
+    progress * 100 / 79
   end
 end

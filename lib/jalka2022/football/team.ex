@@ -11,8 +11,9 @@ defmodule Jalka2022.Football.Team do
     field(:flag, :string)
     field(:group, :string)
 
-    many_to_many :playoff_predictions, PlayoffPrediction,
+    many_to_many(:playoff_predictions, PlayoffPrediction,
       join_through: "playoff_predictions_teams"
+    )
 
     timestamps()
   end

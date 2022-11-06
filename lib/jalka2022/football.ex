@@ -11,19 +11,21 @@ defmodule Jalka2022.Football do
 
   def get_matches_by_group(group) when is_binary(group) do
     query =
-      from m in Match,
+      from(m in Match,
         where: m.group == ^group,
         order_by: m.date,
         preload: [:home_team, :away_team]
+      )
 
     Repo.all(query)
   end
 
   def get_matches() do
     query =
-      from m in Match,
+      from(m in Match,
         order_by: m.date,
         preload: [:home_team, :away_team]
+      )
 
     Repo.all(query)
   end
@@ -38,34 +40,38 @@ defmodule Jalka2022.Football do
 
   def get_predictions_by_match(match_id) do
     query =
-      from gp in GroupPrediction,
+      from(gp in GroupPrediction,
         where: gp.match_id == ^match_id,
         preload: [:user]
+      )
 
     Repo.all(query)
   end
 
   def get_predictions_by_user(user_id) do
     query =
-      from gp in GroupPrediction,
+      from(gp in GroupPrediction,
         where: gp.user_id == ^user_id,
         preload: [:match]
+      )
 
     Repo.all(query)
   end
 
   def get_playoff_predictions() do
     query =
-      from pp in PlayoffPrediction,
+      from(pp in PlayoffPrediction,
         preload: [:user, :team]
+      )
 
     Repo.all(query)
   end
 
   def get_playoff_predictions_by_user(user_id) do
     query =
-      from pp in PlayoffPrediction,
+      from(pp in PlayoffPrediction,
         where: pp.user_id == ^user_id
+      )
 
     Repo.all(query)
   end
@@ -76,8 +82,9 @@ defmodule Jalka2022.Football do
 
   def delete_playoff_predictions_by_user_team(user_id, team_id, phase) do
     query =
-      from pp in PlayoffPrediction,
+      from(pp in PlayoffPrediction,
         where: pp.user_id == ^user_id and pp.team_id == ^team_id and pp.phase <= ^phase
+      )
 
     Repo.delete_all(query)
   end

@@ -25,7 +25,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 8030,
@@ -84,7 +84,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 770,
@@ -143,7 +143,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 804,
@@ -202,7 +202,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 771,
@@ -261,7 +261,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 762,
@@ -320,7 +320,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 782,
@@ -379,7 +379,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 769,
@@ -438,7 +438,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 773,
@@ -497,7 +497,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 815,
@@ -556,7 +556,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 759,
@@ -615,7 +615,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 760,
@@ -674,7 +674,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 805,
@@ -733,7 +733,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 788,
@@ -792,7 +792,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 758,
@@ -851,7 +851,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:40Z",
     "homeTeam": {
       "id": 765,
@@ -910,7 +910,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 764,
@@ -969,7 +969,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 833,
@@ -1028,7 +1028,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 8030,
@@ -1087,7 +1087,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 8601,
@@ -1146,7 +1146,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 770,
@@ -1205,7 +1205,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 802,
@@ -1264,7 +1264,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 794,
@@ -1323,7 +1323,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 773,
@@ -1382,7 +1382,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 762,
@@ -1441,7 +1441,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 766,
@@ -1500,7 +1500,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 805,
@@ -1559,7 +1559,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 799,
@@ -1618,7 +1618,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 760,
@@ -1677,7 +1677,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 781,
@@ -1736,7 +1736,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:40Z",
     "homeTeam": {
       "id": 772,
@@ -1795,7 +1795,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 764,
@@ -1854,7 +1854,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:40Z",
     "homeTeam": {
       "id": 765,
@@ -1913,7 +1913,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 8601,
@@ -1972,7 +1972,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "A",
+    "group": "Alagrupp A",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 791,
@@ -2031,7 +2031,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 833,
@@ -2090,7 +2090,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "B",
+    "group": "Alagrupp B",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 840,
@@ -2149,7 +2149,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 802,
@@ -2208,7 +2208,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "D",
+    "group": "Alagrupp D",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 779,
@@ -2267,7 +2267,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 794,
@@ -2326,7 +2326,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "C",
+    "group": "Alagrupp C",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 801,
@@ -2385,7 +2385,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 799,
@@ -2444,7 +2444,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "F",
+    "group": "Alagrupp F",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 828,
@@ -2503,7 +2503,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 766,
@@ -2562,7 +2562,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "E",
+    "group": "Alagrupp E",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 793,
@@ -2621,7 +2621,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:40Z",
     "homeTeam": {
       "id": 772,
@@ -2680,7 +2680,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "H",
+    "group": "Alagrupp H",
     "lastUpdated": "2022-08-12T13:10:40Z",
     "homeTeam": {
       "id": 763,
@@ -2739,7 +2739,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 781,
@@ -2798,7 +2798,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "G",
+    "group": "Alagrupp G",
     "lastUpdated": "2022-08-12T13:10:39Z",
     "homeTeam": {
       "id": 780,

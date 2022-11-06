@@ -3,7 +3,7 @@ defmodule Jalka2022Web.UserResetPasswordController do
 
   alias Jalka2022.Accounts
 
-  plug :get_user_by_reset_password_token when action in [:edit, :update]
+  plug(:get_user_by_reset_password_token when action in [:edit, :update])
 
   def new(conn, _params) do
     render(conn, "new.html")

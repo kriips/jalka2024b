@@ -5,11 +5,11 @@ defmodule Jalka2022.Accounts.User do
 
   @derive {Inspect, except: [:password]}
   schema "users" do
-    field :email, :string
-    field :name, :string
-    field :password, :string, virtual: true
-    field :hashed_password, :string
-    field :confirmed_at, :naive_datetime
+    field(:email, :string)
+    field(:name, :string)
+    field(:password, :string, virtual: true)
+    field(:hashed_password, :string)
+    field(:confirmed_at, :naive_datetime)
 
     timestamps()
   end

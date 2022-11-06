@@ -3,7 +3,7 @@
     <div class="container">
         <h2>Kaheksandikfinalistid (<%= @left16 %>)</h2>
         <%= for {group, teams} <- @teams16 do %>
-            <%= if group == "A" or group == "D" do %>
+            <%= if group == "A" or group == "D"  or group == "G" do %>
             <div class="row">
             <% end %>
                 <div class="column">
@@ -24,7 +24,7 @@
                     </div>
                 <% end %>
                 </div>
-            <%= if group == "C" or group == "F" do %>
+            <%= if group == "C" or group == "F" or group == "H" do %>
                 </div>
                 <hr />
             <% end %>

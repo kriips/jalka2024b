@@ -64,7 +64,9 @@ defmodule Jalka2022Web.Resolvers.FootballResolver do
       "C" => [],
       "D" => [],
       "E" => [],
-      "F" => []
+      "F" => [],
+      "G" => [],
+      "H" => []
     }
 
     Football.get_teams()
@@ -81,7 +83,9 @@ defmodule Jalka2022Web.Resolvers.FootballResolver do
       "Alagrupp C" => 0,
       "Alagrupp D" => 0,
       "Alagrupp E" => 0,
-      "Alagrupp F" => 0
+      "Alagrupp F" => 0,
+      "Alagrupp G" => 0,
+      "Alagrupp H" => 0
     }
 
     Football.get_predictions_by_user(user_id)
@@ -112,7 +116,6 @@ defmodule Jalka2022Web.Resolvers.FootballResolver do
     |> group_by_team()
     |> sort_by_count()
     |> sort_by_phase()
-    |> IO.inspect()
   end
 
   defp calculate_result(home_score, away_score) do
@@ -124,7 +127,7 @@ defmodule Jalka2022Web.Resolvers.FootballResolver do
   end
 
   defp group_by_result(predictions) do
-#    grouped = %{home: [], draw: [], away: []}
+    #    grouped = %{home: [], draw: [], away: []}
 
     predictions
     |> Enum.group_by(& &1.result, & &1)

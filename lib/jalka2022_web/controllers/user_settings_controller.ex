@@ -4,7 +4,7 @@ defmodule Jalka2022Web.UserSettingsController do
   alias Jalka2022.Accounts
   alias Jalka2022Web.UserAuth
 
-  plug :assign_email_and_password_changesets
+  plug(:assign_email_and_password_changesets)
 
   def edit(conn, _params) do
     render(conn, "edit.html")

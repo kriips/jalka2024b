@@ -32,13 +32,13 @@ defmodule Jalka2022.Accounts do
   def get_user_by_name(_name), do: []
 
   def get_allowed_users_by_name(query) when is_binary(query) do
-    Repo.all(from a in AllowedUser, where: ilike(a.name, ^"%#{query}%"))
+    Repo.all(from(a in AllowedUser, where: ilike(a.name, ^"%#{query}%")))
   end
 
   def get_allowed_users_by_name(_name), do: []
 
   def get_allowed_users_exactly_by_name(query) when is_binary(query) do
-    Repo.all(from a in AllowedUser, where: like(a.name, ^"#{query}"))
+    Repo.all(from(a in AllowedUser, where: like(a.name, ^"#{query}")))
   end
 
   def get_allowed_users_exactly_by_name(_name), do: []
