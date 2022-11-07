@@ -67,7 +67,7 @@ secret_key_base =
 
 config :jalka2022, Jalka2022Web.Endpoint,
        http: [
-         url: [host: "jalka2022.fly.dev", port: 80],
+         url: [port: 80],
          port: String.to_integer(System.get_env("PORT") || "4000"),
          transport_options: [socket_opts: [:inet6]]
        ],
