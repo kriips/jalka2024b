@@ -1,4 +1,4 @@
-# fly.toml file generated for jalka2022 on 2022-11-06T19:54:16+02:00
+# fly.toml file generated for jalka2022 on 2022-11-07T12:44:29+02:00
 
 app = "jalka2022"
 kill_signal = "SIGTERM"
