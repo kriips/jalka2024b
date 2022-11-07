@@ -10,12 +10,13 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :jalka2022, Jalka2022Web.Endpoint,
-#  url: [host: "jalka.eys.ee", port: 80],
+  url: [host: "jalka2022.fly.dev", port: 80],
   check_origin: [
+    "//jalka2022.fly.dev",
     "//jalka.eys.ee"
   ],
-  force_ssl: [rewrite_on: [:x_forwarded_host, :x_forwarded_port, :x_forwarded_proto]],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  force_ssl: [rewrite_on: [:x_forwarded_host, :x_forwarded_port, :x_forwarded_proto]]
+#  cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
 config :logger, level: :info
