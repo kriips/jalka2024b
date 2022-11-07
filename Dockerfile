@@ -34,6 +34,9 @@ RUN mix local.hex --force && \
 
 # set build ENV
 ENV MIX_ENV="prod"
+ENV ECTO_IPV6="true"
+ENV DATABASE_URL="postgres://postgres:w35Dsgvssi1tMRF@jalka2022-db.internal:5432"
+ENV SECRET_KEY_BASE="3U8JC5dFuT0k2cZDTb/WVERkDV5E4xqZ4rzfW44vvbeSHVUiMshTHHnhu7BEdJiy"
 
 # install mix dependencies
 COPY mix.exs mix.lock ./
@@ -53,7 +56,7 @@ COPY lib lib
 COPY assets assets
 
 # compile assets
-RUN mix assets.deploy
+# RUN mix assets.deploy
 
 # Compile the release
 RUN mix compile

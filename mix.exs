@@ -20,7 +20,7 @@ defmodule Jalka2022.MixProject do
   def application do
     [
       mod: {Jalka2022.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ssl]
     ]
   end
 

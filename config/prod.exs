@@ -10,12 +10,11 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :jalka2022, Jalka2022Web.Endpoint,
-  url: [host: "jalka.eys.ee", port: 80],
+#  url: [host: "jalka.eys.ee", port: 80],
   check_origin: [
-    "//unsightly-gleeful-blackrhino.gigalixirapp.com",
     "//jalka.eys.ee"
   ],
-  force_ssl: [rewrite_on: [:x_forwarded_proto], host: nil],
+  force_ssl: [rewrite_on: [:x_forwarded_host, :x_forwarded_port, :x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
@@ -57,4 +56,20 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs which loads secrets
 # and configuration from environment variables.
-import_config "prod.secret.exs"
+#import_config "prod.secret.exs"
+
+secret_key_base =
+  System.get_env("SECRET_KEY_BASE") ||
+    raise """
+    environment variable SECRET_KEY_BASE is missing.
+    You can generate one by calling: mix phx.gen.secret
+    """
+
+config :jalka2022, Jalka2022Web.Endpoint,
+       http: [
+         url: [host: "jalka2022.fly.dev", port: 80],
+         port: String.to_integer(System.get_env("PORT") || "4000"),
+         transport_options: [socket_opts: [:inet6]]
+       ],
+       secret_key_base: secret_key_base
+
