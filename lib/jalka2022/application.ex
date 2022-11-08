@@ -6,6 +6,8 @@ defmodule Jalka2022.Application do
   use Application
 
   def start(_type, _args) do
+    topologies = Application.get_env(:libcluster, :topologies) || []
+
     children = [
       # Start the Ecto repository
       Jalka2022.Repo,
@@ -14,9 +16,10 @@ defmodule Jalka2022.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Jalka2022.PubSub},
       # Start the Endpoint (http/https)
-      Jalka2022Web.Endpoint
+      Jalka2022Web.Endpoint,
       # Start a worker by calling: Jalka2022.Worker.start_link(arg)
       # {Jalka2022.Worker, arg}
+      {Cluster.Supervisor, [topologies, [name: Jalka2022.ClusterSupervisor]]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

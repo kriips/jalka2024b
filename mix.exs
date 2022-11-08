@@ -10,7 +10,8 @@ defmodule Jalka2022.MixProject do
       compilers: [:phoenix] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      releases: releases()
     ]
   end
 
@@ -21,6 +22,15 @@ defmodule Jalka2022.MixProject do
     [
       mod: {Jalka2022.Application, []},
       extra_applications: [:logger, :runtime_tools, :ssl]
+    ]
+  end
+
+  defp releases() do
+    [
+      jalka2022: [
+        include_executables_for: [:unix],
+        cookie: "TZ2B6FQPIHQ5BIKUCDAQR6NVSQA57BGFF64IFPS2QC66ZHCGTPBQ===="
+      ]
     ]
   end
 
@@ -51,6 +61,7 @@ defmodule Jalka2022.MixProject do
       {:plug_cowboy, "~> 2.6"},
       {:bamboo, "~> 2.2"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
+      {:libcluster, "~> 3.3.1"},
     ]
   end
 

@@ -26,6 +26,19 @@ case Config.config_env() do
         environment variable PORT is missing.
         """
 
+    config :libcluster,
+           debug: true,
+           topologies: [
+             fly6pn: [
+               strategy: Cluster.Strategy.DNSPoll,
+               config: [
+                 polling_interval: 5_000,
+                 query: "#{app_name}.internal",
+                 node_basename: app_name
+               ]
+             ]
+           ]
+
     config :jalka2022, Jalka2022Web.Endpoint,
       url: [host: "#{app_name}.fly.dev", port: 80],
       http: [
