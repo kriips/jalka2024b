@@ -29,7 +29,7 @@ defmodule Jalka2022.MixProject do
     [
       jalka2022: [
         include_executables_for: [:unix],
-        cookie: "TZ2B6FQPIHQ5BIKUCDAQR6NVSQA57BGFF64IFPS2QC66ZHCGTPBQ===="
+        cookie: "yQ0RMidBX8IOefY3jj1g2392x9rNJ-VwlPJOyvXnMZvQv7Ae1qsPYw=="
       ]
     ]
   end

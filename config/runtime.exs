@@ -5,6 +5,20 @@ if Config.config_env() == :dev do
   DotenvParser.load_file(".env")
 end
 
+maybe_ipv6 = if System.get_env("ECTO_IPV6"), do: [:inet6], else: []
+database_url =
+  System.get_env("DATABASE_URL") ||
+    raise """
+    environment variable DATABASE_URL is missing.
+    For example: ecto://USER:PASS@HOST/DATABASE
+    """
+
+config :jalka2022, Jalka2022.Repo,
+       # ssl: true,
+       url: database_url,
+       pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+       socket_options: maybe_ipv6
+
 case Config.config_env() do
   :prod ->
     app_name =
@@ -26,6 +40,20 @@ case Config.config_env() do
         environment variable PORT is missing.
         """
 
+    config :jalka2022, Jalka2022Web.Endpoint,
+      url: [host: "#{app_name}.fly.dev", port: 80],
+      http: [
+        ip: {0, 0, 0, 0, 0, 0, 0, 0},
+        port: String.to_integer(port)
+      ],
+      secret_key_base: secret_key,
+      live_view: [signing_salt: signing_salt],
+      server: true,
+      check_origin: [
+                    "//jalka2022.fly.dev",
+                    "//jalka.eys.ee"
+                    ]
+
     config :libcluster,
            debug: true,
            topologies: [
@@ -39,31 +67,6 @@ case Config.config_env() do
              ]
            ]
 
-    config :jalka2022, Jalka2022Web.Endpoint,
-      url: [host: "#{app_name}.fly.dev", port: 80],
-      http: [
-        ip: {0, 0, 0, 0, 0, 0, 0, 0},
-        port: String.to_integer(port)
-      ],
-      secret_key_base: secret_key,
-      live_view: [signing_salt: signing_salt],
-      server: true
-
   :dev ->
     config :jalka2022, Jalka2022Web.Endpoint, server: true
 end
-
-
-maybe_ipv6 = if System.get_env("ECTO_IPV6"), do: [:inet6], else: []
-database_url =
-  System.get_env("DATABASE_URL") ||
-    raise """
-    environment variable DATABASE_URL is missing.
-    For example: ecto://USER:PASS@HOST/DATABASE
-    """
-
-config :jalka2022, Jalka2022.Repo,
-       # ssl: true,
-       url: database_url,
-       pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-       socket_options: maybe_ipv6

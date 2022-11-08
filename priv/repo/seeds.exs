@@ -1,1 +1,0 @@
-Jalka2022.Seed.seed()
