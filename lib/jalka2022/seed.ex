@@ -15,7 +15,7 @@ defmodule Jalka2022.Seed do
 
     if Code.ensure_compiled?(Jalka2022.Accounts.AllowedUser) &&
          Jalka2022.Accounts.AllowedUser |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
-      Enum.each(Jason.decode!(File.read!('priv/repo/data/allowed_users.json')), fn attrs ->
+      Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/allowed_users.json')), fn attrs ->
         %Jalka2022.Accounts.AllowedUser{}
         |> Jalka2022.Accounts.AllowedUser.changeset(attrs)
         |> Jalka2022.Repo.insert!()
@@ -24,7 +24,7 @@ defmodule Jalka2022.Seed do
 
     if Code.ensure_compiled?(Jalka2022.Football.Team) &&
          Jalka2022.Football.Team |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
-      Enum.each(Jason.decode!(File.read!('priv/repo/data/teams.json')), fn attrs ->
+      Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/teams.json')), fn attrs ->
         %Jalka2022.Football.Team{}
         |> Jalka2022.Football.Team.changeset(%{
           id: Map.get(attrs, "id"),
@@ -39,7 +39,7 @@ defmodule Jalka2022.Seed do
 
     if Code.ensure_compiled?(Jalka2022.Football.Match) &&
          Jalka2022.Football.Match |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
-      Enum.each(Jason.decode!(File.read!('priv/repo/data/matches.json')), fn attrs ->
+      Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/matches.json')), fn attrs ->
         %Jalka2022.Football.Match{}
         |> Jalka2022.Football.Match.changeset(%{
           group: Map.get(attrs, "group"),
