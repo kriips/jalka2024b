@@ -56,7 +56,7 @@ COPY lib lib
 COPY assets assets
 
 # compile assets
-# RUN mix assets.deploy
+RUN mix assets.deploy
 
 # Compile the release
 RUN mix compile
@@ -83,6 +83,7 @@ ENV LC_ALL en_US.UTF-8
 # Appended by flyctl
 ENV ECTO_IPV6 true
 ENV ERL_AFLAGS "-proto_dist inet6_tcp"
+ENV PORT 8080
 
 WORKDIR "/app"
 RUN chown nobody /app

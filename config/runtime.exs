@@ -10,17 +10,31 @@ case Config.config_env() do
     app_name =
       System.get_env("FLY_APP_NAME") ||
         raise "FLY_APP_NAME not available"
+    secret_key =
+      System.get_env("SECRET_KEY_BASE") ||
+        raise """
+        environment variable SECRET_KEY_BASE is missing.
+        """
+    signing_salt =
+      System.get_env("SIGNING_SALT") ||
+        raise """
+        environment variable SIGNING_SALT is missing.
+        """
+    port =
+      System.get_env("PORT") ||
+        raise """
+        environment variable PORT is missing.
+        """
 
     config :jalka2022, Jalka2022Web.Endpoint,
       url: [host: "#{app_name}.fly.dev", port: 80],
       http: [
         ip: {0, 0, 0, 0, 0, 0, 0, 0},
-        port: String.to_integer(System.get_env("PORT") || "4000")
+        port: String.to_integer(port)
       ],
-      secret_key_base: System.get_env("SECRET_KEY_BASE"),
-      live_view: [signing_salt: System.get_env("SIGNING_SALT")]
-
-    config :jalka2022, HelloElixirWeb.Endpoint, server: true
+      secret_key_base: secret_key,
+      live_view: [signing_salt: signing_salt],
+      server: true
 
   :dev ->
     config :jalka2022, Jalka2022Web.Endpoint, server: true
