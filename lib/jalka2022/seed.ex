@@ -1,5 +1,4 @@
 defmodule Jalka2022.Seed do
-  import Ecto.Changeset
   def seed do
     # Script for populating the database. You can run it as:
     #
@@ -13,7 +12,7 @@ defmodule Jalka2022.Seed do
     # We recommend using the bang functions (`insert!`, `update!`
     # and so on) as they will fail if something goes wrong.
 
-    if Code.ensure_compiled?(Jalka2022.Accounts.AllowedUser) &&
+    if Code.ensure_compiled(Jalka2022.Accounts.AllowedUser) &&
          Jalka2022.Accounts.AllowedUser |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
       Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/allowed_users.json')), fn attrs ->
         %Jalka2022.Accounts.AllowedUser{}
@@ -22,7 +21,7 @@ defmodule Jalka2022.Seed do
       end)
     end
 
-    if Code.ensure_compiled?(Jalka2022.Football.Team) &&
+    if Code.ensure_compiled(Jalka2022.Football.Team) &&
          Jalka2022.Football.Team |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
       Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/teams.json')), fn attrs ->
         %Jalka2022.Football.Team{}
@@ -37,7 +36,7 @@ defmodule Jalka2022.Seed do
       end)
     end
 
-    if Code.ensure_compiled?(Jalka2022.Football.Match) &&
+    if Code.ensure_compiled(Jalka2022.Football.Match) &&
          Jalka2022.Football.Match |> Jalka2022.Repo.aggregate(:count, :id) == 0 do
       Enum.each(Jason.decode!(File.read!('/app/lib/jalka2022-0.1.0/priv/repo/data/matches.json')), fn attrs ->
         %Jalka2022.Football.Match{}

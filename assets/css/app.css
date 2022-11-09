@@ -106,7 +106,7 @@
 }
 
 .button-large {
-  font-size: 2.4rem;
+  font-size: 2rem;
   height: 7.5rem;
   line-height: 7.5rem;
   padding: 0 2rem;
@@ -136,6 +136,7 @@
 
 .prediction-col {
   height: 12rem;
+  display: inline-table !important;
 }
 .away-team {
   align-items: flex-start;
@@ -221,7 +222,6 @@
   list-style: none;
   margin-bottom: 0;
   line-height: 5.2rem;
-  margin-right: 5rem
 }
 
 @media(min-width: 80rem) {
