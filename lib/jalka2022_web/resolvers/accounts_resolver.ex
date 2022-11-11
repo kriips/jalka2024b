@@ -23,6 +23,10 @@ defmodule Jalka2022Web.Resolvers.AccountsResolver do
     end
   end
 
+  def get_user(user_id) do
+    Jalka2022.Accounts.get_user!(user_id)
+  end
+
   def current_user(_, %{context: %{current_user: current_user}}) do
     {:ok, current_user}
   end

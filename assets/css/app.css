@@ -422,3 +422,8 @@ progress bar
 
   transition: width 500ms ease-in-out;
 }
+
+.checkbox {
+  width: 10%;
+  height: auto;
+}

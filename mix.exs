@@ -61,7 +61,7 @@ defmodule Jalka2022.MixProject do
       {:plug_cowboy, "~> 2.6"},
       {:bamboo, "~> 2.2"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
-      {:libcluster, "~> 3.3.1"},
+      {:libcluster, "~> 3.3.1"}
     ]
   end
 

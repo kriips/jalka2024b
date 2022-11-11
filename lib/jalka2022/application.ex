@@ -18,9 +18,10 @@ defmodule Jalka2022.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Jalka2022.PubSub},
       # Start the Endpoint (http/https)
-      Jalka2022Web.Endpoint
+      Jalka2022Web.Endpoint,
       # Start a worker by calling: Jalka2022.Worker.start_link(arg)
-      # {Jalka2022.Worker, arg}
+      # {Jalka2022.Worker, arg},
+      Jalka2022.Leaderboard
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

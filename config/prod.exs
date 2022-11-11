@@ -16,6 +16,7 @@ config :jalka2022, Jalka2022Web.Endpoint,
     "//jalka.eys.ee"
   ],
   force_ssl: [rewrite_on: [:x_forwarded_host, :x_forwarded_port, :x_forwarded_proto]]
+
 #  cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
@@ -57,6 +58,4 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs which loads secrets
 # and configuration from environment variables.
-#import_config "prod.secret.exs"
-
-
+# import_config "prod.secret.exs"

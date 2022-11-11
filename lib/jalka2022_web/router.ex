@@ -19,10 +19,12 @@ defmodule Jalka2022Web.Router do
 
   scope "/", Jalka2022Web do
     pipe_through(:browser)
-    live("/", PageLive, :index)
+    live("/leaderboard", LeaderboardLive.Leaderboard, :view)
     live("/football/games/:id", FootballLive.Game, :view)
     live("/football/games", FootballLive.Games, :view)
     live("/football/playoffs", FootballLive.Playoffs, :view)
+    live("/football/user/:id", FootballLive.User, :view)
+    live("/", PageLive, :index)
   end
 
   # Other scopes may use custom stacks.
@@ -67,6 +69,8 @@ defmodule Jalka2022Web.Router do
     live("/football/predict", UserPredictionLive.Navigate, :navigate)
     live("/football/predict/playoffs", UserPredictionLive.Playoffs, :edit)
     live("/football/predict/:group", UserPredictionLive.Groups, :edit)
+    live("/football/result/group", ResultLive.Groups, :create)
+    live("/football/result/playoff", ResultLive.Playoff, :create)
     get("/users/settings", UserSettingsController, :edit)
     put("/users/settings", UserSettingsController, :update)
     get("/users/settings/confirm_email/:token", UserSettingsController, :confirm_email)

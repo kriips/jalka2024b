@@ -27,6 +27,7 @@ defmodule Jalka2022Web.UserRegistrationLive.New do
   def handle_event("validate", %{"user" => user_params}, socket) do
     require Logger
     Logger.info("validate event incoming")
+
     changeset =
       %User{}
       |> Jalka2022.Accounts.change_user_registration(user_params)
@@ -35,6 +36,7 @@ defmodule Jalka2022Web.UserRegistrationLive.New do
     results = search(user_params["name"])
 
     Logger.info(results)
+
     {:noreply,
      assign(socket,
        results: results,
