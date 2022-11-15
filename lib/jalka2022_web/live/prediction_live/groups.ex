@@ -128,9 +128,7 @@ defmodule Jalka2022Web.UserPredictionLive.Groups do
            away_score != "-" or home_score != "-"
          end) < 6 do
       true -> "button-outline"
-      _ ->
-        Jalka2022.Leaderboard.recalc_leaderboard()
-        ""
+      _ -> ""
     end
   end
 end
