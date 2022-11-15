@@ -133,6 +133,10 @@ defmodule Jalka2022Web.UserPredictionLive.Playoffs do
         "button-outline"
       end
 
+    if (progress == 31) do
+      Jalka2022.Leaderboard.recalc_leaderboard()
+    end
+
     assign(socket,
       teams16: teams16,
       left16: left16,
