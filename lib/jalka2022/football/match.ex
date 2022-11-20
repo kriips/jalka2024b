@@ -38,6 +38,6 @@ defmodule Jalka2022.Football.Match do
   @doc false
   def create_changeset(match, attrs) do
     match
-    |> cast(attrs, [:home_result, :away_result, :finished])
+    |> cast(attrs, [:home_score, :away_score, :finished])
   end
 end
