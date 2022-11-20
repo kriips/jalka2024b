@@ -28,12 +28,11 @@ defmodule Jalka2022.Leaderboard do
 
   defp recalculate_leaderboard() do
     IO.inspect("recalculating leaderboard")
-    finished_matches = FootballResolver.list_finished_matches() |> IO.inspect()
+    finished_matches = FootballResolver.list_finished_matches()
     playoff_results = FootballResolver.list_playoff_results()
 
     AccountsResolver.list_users()
     |> Enum.map(&calculate_points(&1, finished_matches))
-    |> IO.inspect()
     |> Enum.map(&calculate_playoff_points(&1, playoff_results))
     |> Enum.sort(fn {_id1, _name1, _gpoints1, _ppoints1, points1},
                     {_id2, _name2, _gpoints2, _ppoints2, points2} ->
