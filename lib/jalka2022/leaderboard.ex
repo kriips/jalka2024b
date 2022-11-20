@@ -27,11 +27,13 @@ defmodule Jalka2022.Leaderboard do
   def recalc_leaderboard, do: GenServer.call(__MODULE__, :recalc_leaderboard)
 
   defp recalculate_leaderboard() do
-    finished_matches = FootballResolver.list_finished_matches()
+    IO.inspect("recalculating leaderboard")
+    finished_matches = FootballResolver.list_finished_matches() |> IO.inspect()
     playoff_results = FootballResolver.list_playoff_results()
 
     AccountsResolver.list_users()
     |> Enum.map(&calculate_points(&1, finished_matches))
+    |> IO.inspect()
     |> Enum.map(&calculate_playoff_points(&1, playoff_results))
     |> Enum.sort(fn {_id1, _name1, _gpoints1, _ppoints1, points1},
                     {_id2, _name2, _gpoints2, _ppoints2, points2} ->
