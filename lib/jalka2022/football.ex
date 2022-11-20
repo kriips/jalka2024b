@@ -45,6 +45,9 @@ defmodule Jalka2022.Football do
       )
 
     Repo.all(query)
+    |> Enum.map(fn match ->
+      %Match{match | date: Timex.shift(match.date, hours: +2)}
+    end)
   end
 
   def get_match(id) do
