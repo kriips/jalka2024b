@@ -40,18 +40,6 @@
         </div>
         <div class="row">
             <div class="column">
-                <%= live_redirect to: Routes.user_prediction_groups_path(@socket, :edit, "G") do %>
-                <button class="button-large <%= @filled["Alagrupp G"] %> button-main">Alagrupp G</button>
-                <% end %>
-            </div>
-            <div class="column">
-                <%= live_redirect to: Routes.user_prediction_groups_path(@socket, :edit, "H") do %>
-                <button class="button-large <%= @filled["Alagrupp H"] %> button-main">Alagrupp H</button>
-                <% end %>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
                 <%= live_redirect to: Routes.user_prediction_playoffs_path(@socket, :edit) do %>
                 <button class="button-large button-main <%= @playoffs_filled %>"  <%= @playoffs_disabled %>>Playoff-mängud</button>
                 <% end %>

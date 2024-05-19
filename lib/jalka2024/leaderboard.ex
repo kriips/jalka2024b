@@ -119,6 +119,10 @@ defmodule Jalka2024.Leaderboard do
     add_rank(users, rank, index + 1, points, acc ++ [{id, rank, name, gpoints, ppoints, points}])
   end
 
+  defp add_rank([], _rank, _index, []) do
+    []
+  end
+
   defp add_rank([{id, name, gpoints, ppoints, points} | users], rank, index, prev_points, acc) do
     new_rank =
       if points == prev_points do

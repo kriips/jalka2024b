@@ -11,6 +11,8 @@ defmodule Jalka2024.Football do
   ## Database getters
 
   def get_matches_by_group(group) when is_binary(group) do
+    IO.inspect("Getting matches by group")
+    IO.inspect(group)
     query =
       from(m in Match,
         where: m.group == ^group,

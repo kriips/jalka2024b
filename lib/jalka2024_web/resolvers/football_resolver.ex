@@ -117,9 +117,7 @@ defmodule Jalka2024Web.Resolvers.FootballResolver do
       "Alagrupp C" => 0,
       "Alagrupp D" => 0,
       "Alagrupp E" => 0,
-      "Alagrupp F" => 0,
-      "Alagrupp G" => 0,
-      "Alagrupp H" => 0
+      "Alagrupp F" => 0
     }
 
     Football.get_predictions_by_user(user_id)
