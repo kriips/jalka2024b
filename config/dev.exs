@@ -1,10 +1,10 @@
 import Config
 
 # Configure your database
-config :jalka2022, Jalka2022.Repo,
+config :jalka2024, Jalka2024.Repo,
   username: "postgres",
   password: "postgres",
-  database: "jalka2022_dev",
+  database: "jalka2024_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -15,7 +15,7 @@ config :jalka2022, Jalka2022.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :jalka2022, Jalka2022Web.Endpoint,
+config :jalka2024, Jalka2024Web.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: false,
@@ -55,13 +55,13 @@ config :jalka2022, Jalka2022Web.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :jalka2022, Jalka2022Web.Endpoint,
+config :jalka2024, Jalka2024Web.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/jalka2022_web/(live|views)/.*(ex)$",
-      ~r"lib/jalka2022_web/templates/.*(eex)$"
+      ~r"lib/jalka2024_web/(live|views)/.*(ex)$",
+      ~r"lib/jalka2024_web/templates/.*(eex)$"
     ]
   ]
 
@@ -74,3 +74,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :jalka2024, :environment, :dev

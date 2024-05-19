@@ -1,6 +1,6 @@
-# fly.toml file generated for jalka2022 on 2022-11-07T12:44:29+02:00
+# fly.toml file generated for jalka2024 on 2022-11-07T12:44:29+02:00
 
-app = "jalka2022"
+app = "jalka2024"
 kill_signal = "SIGTERM"
 kill_timeout = 5
 processes = []

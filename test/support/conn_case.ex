@@ -1,4 +1,4 @@
-defmodule Jalka2022Web.ConnCase do
+defmodule Jalka2024Web.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule Jalka2022Web.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use Jalka2022Web.ConnCase, async: true`, although
+  by setting `use Jalka2024Web.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -22,20 +22,20 @@ defmodule Jalka2022Web.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import Jalka2022Web.ConnCase
+      import Jalka2024Web.ConnCase
 
-      alias Jalka2022Web.Router.Helpers, as: Routes
+      alias Jalka2024Web.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint Jalka2022Web.Endpoint
+      @endpoint Jalka2024Web.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Jalka2022.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Jalka2024.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Jalka2022.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Jalka2024.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}
@@ -50,7 +50,7 @@ defmodule Jalka2022Web.ConnCase do
   test context.
   """
   def register_and_log_in_user(%{conn: conn}) do
-    user = Jalka2022.AccountsFixtures.user_fixture()
+    user = Jalka2024.AccountsFixtures.user_fixture()
     %{conn: log_in_user(conn, user), user: user}
   end
 
@@ -60,7 +60,7 @@ defmodule Jalka2022Web.ConnCase do
   It returns an updated `conn`.
   """
   def log_in_user(conn, user) do
-    token = Jalka2022.Accounts.generate_user_session_token(user)
+    token = Jalka2024.Accounts.generate_user_session_token(user)
 
     conn
     |> Phoenix.ConnTest.init_test_session(%{})

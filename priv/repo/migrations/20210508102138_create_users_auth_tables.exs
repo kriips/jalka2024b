@@ -1,4 +1,4 @@
-defmodule Jalka2022.Repo.Migrations.CreateUsersAuthTables do
+defmodule Jalka2024.Repo.Migrations.CreateUsersAuthTables do
   use Ecto.Migration
 
   def change do

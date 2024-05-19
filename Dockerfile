@@ -35,7 +35,7 @@ RUN mix local.hex --force && \
 # set build ENV
 ENV MIX_ENV="prod"
 ENV ECTO_IPV6="true"
-ENV DATABASE_URL="postgres://postgres:w35Dsgvssi1tMRF@jalka2022-db.internal:5432"
+ENV DATABASE_URL="postgres://postgres:w35Dsgvssi1tMRF@jalka2024-db.internal:5432"
 ENV SECRET_KEY_BASE="3U8JC5dFuT0k2cZDTb/WVERkDV5E4xqZ4rzfW44vvbeSHVUiMshTHHnhu7BEdJiy"
 
 # install mix dependencies
@@ -92,7 +92,7 @@ RUN chown nobody /app
 ENV MIX_ENV="prod"
 
 # Only copy the final release from the build stage
-COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/jalka2022 ./
+COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/jalka2024 ./
 
 USER nobody
 

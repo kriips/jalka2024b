@@ -1,1 +1,1 @@
-call "%~dp0\jalka2022" eval Jalka2022.Release.migrate
+call "%~dp0\jalka2024" eval Jalka2024.Release.migrate

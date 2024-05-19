@@ -7,14 +7,20 @@ end
 
 maybe_ipv6 = if System.get_env("ECTO_IPV6"), do: [:inet6], else: []
 
+db_config = Application.get_env(:jalka2024, Jalka2024.Repo)
 database_url =
-  System.get_env("DATABASE_URL") ||
-    raise """
-    environment variable DATABASE_URL is missing.
-    For example: ecto://USER:PASS@HOST/DATABASE
-    """
+  case Config.config_env() do
+    :test ->
+      "postgres://#{db_config[:username]}:#{db_config[:password]}@#{db_config[:hostname]}/#{db_config[:database]}"
+    _ ->
+      System.get_env("DATABASE_URL") ||
+        raise """
+        environment variable DATABASE_URL is missing.
+        For example: ecto://USER:PASS@HOST/DATABASE
+        """
+  end
 
-config :jalka2022, Jalka2022.Repo,
+config :jalka2024, Jalka2024.Repo,
   # ssl: true,
   url: database_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
@@ -44,7 +50,7 @@ case Config.config_env() do
         environment variable PORT is missing.
         """
 
-    config :jalka2022, Jalka2022Web.Endpoint,
+    config :jalka2024, Jalka2024Web.Endpoint,
       url: [host: "#{app_name}.fly.dev", port: 80],
       http: [
         ip: {0, 0, 0, 0, 0, 0, 0, 0},
@@ -72,5 +78,7 @@ case Config.config_env() do
       ]
 
   :dev ->
-    config :jalka2022, Jalka2022Web.Endpoint, server: true
+    config :jalka2024, Jalka2024Web.Endpoint, server: true
+  :test ->
+    config :jalka2024, Jalka2024Web.Endpoint, server: false
 end

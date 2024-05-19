@@ -1,4 +1,4 @@
-defmodule Jalka2022.DataCase do
+defmodule Jalka2024.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -10,7 +10,7 @@ defmodule Jalka2022.DataCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use Jalka2022.DataCase, async: true`, although
+  by setting `use Jalka2024.DataCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -18,20 +18,20 @@ defmodule Jalka2022.DataCase do
 
   using do
     quote do
-      alias Jalka2022.Repo
+      alias Jalka2024.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Jalka2022.DataCase
+      import Jalka2024.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Jalka2022.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Jalka2024.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Jalka2022.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Jalka2024.Repo, {:shared, self()})
     end
 
     :ok

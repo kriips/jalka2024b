@@ -1,4 +1,4 @@
-defmodule Jalka2022.Repo.Migrations.CreateGroupPredictions do
+defmodule Jalka2024.Repo.Migrations.CreateGroupPredictions do
   use Ecto.Migration
 
   def change do

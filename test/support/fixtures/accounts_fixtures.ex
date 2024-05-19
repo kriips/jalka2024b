@@ -1,7 +1,7 @@
-defmodule Jalka2022.AccountsFixtures do
+defmodule Jalka2024.AccountsFixtures do
   @moduledoc """
   This module defines test helpers for creating
-  entities via the `Jalka2022.Accounts` context.
+  entities via the `Jalka2024.Accounts` context.
   """
 
   def unique_user_email, do: "user#{System.unique_integer()}@example.com"
@@ -18,7 +18,7 @@ defmodule Jalka2022.AccountsFixtures do
     {:ok, user} =
       attrs
       |> valid_user_attributes()
-      |> Jalka2022.Accounts.register_user()
+      |> Jalka2024.Accounts.register_user()
 
     user
   end
