@@ -1,15 +1,14 @@
 defmodule Jalka2024.Seed do
 
   def seed do
-    IO.inspect(Mix.Project.app_path())
     prefix = case Application.get_env(:jalka2024, :environment) do
       :prod -> "/app/lib/jalka2024-0.1.0"
-      _ -> ""
+      _ -> Mix.Project.app_path()
     end
     if Code.ensure_compiled(Jalka2024.Accounts.AllowedUser) &&
          Jalka2024.Accounts.AllowedUser |> Jalka2024.Repo.aggregate(:count, :id) == 0 do
       Enum.each(
-        Jason.decode!(File.read!('#{Mix.Project.app_path()}/priv/repo/data/allowed_users.json')),
+        Jason.decode!(File.read!('#{prefix}/priv/repo/data/allowed_users.json')),
         fn attrs ->
           %Jalka2024.Accounts.AllowedUser{}
           |> Jalka2024.Accounts.AllowedUser.changeset(attrs)
@@ -21,7 +20,7 @@ defmodule Jalka2024.Seed do
     if Code.ensure_compiled(Jalka2024.Football.Team) &&
          Jalka2024.Football.Team |> Jalka2024.Repo.aggregate(:count, :id) == 0 do
       Enum.each(
-        Jason.decode!(File.read!('#{Mix.Project.app_path()}/priv/repo/data/teams.json')),
+        Jason.decode!(File.read!('#{prefix}/priv/repo/data/teams.json')),
         fn attrs ->
           %Jalka2024.Football.Team{}
           |> Jalka2024.Football.Team.changeset(%{
@@ -39,7 +38,7 @@ defmodule Jalka2024.Seed do
     if Code.ensure_compiled(Jalka2024.Football.Match) &&
          Jalka2024.Football.Match |> Jalka2024.Repo.aggregate(:count, :id) == 0 do
       Enum.each(
-        Jason.decode!(File.read!('#{Mix.Project.app_path()}/priv/repo/data/matches.json')),
+        Jason.decode!(File.read!('#{prefix}/priv/repo/data/matches.json')),
         fn attrs ->
           if (Map.get(attrs, "stage") == "GROUP_STAGE") do
             %Jalka2024.Football.Match{}
