@@ -4,7 +4,7 @@ import Config
 config :jalka2024, Jalka2024.Repo,
   username: "postgres",
   password: "postgres",
-  database: "jalka2024_dev",
+  database: "jalka2024b_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

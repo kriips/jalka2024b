@@ -1,4 +1,4 @@
-<h1>Sisene</h1>
+<h1>Log in</h1>
 
 <%= form_for @conn, Routes.user_session_path(@conn, :create), [as: :user], fn f -> %>
   <%= if @error_message do %>
@@ -7,17 +7,17 @@
     </div>
   <% end %>
 
-  <%= label f, :nimi %>
+  <%= label f, :name %>
   <%= text_input f, :name, required: true %>
 
-  <%= label f, :parool %>
+  <%= label f, :password %>
   <%= password_input f, :password, required: true %>
 
   <div>
-    <%= submit "Sisene" %>
+    <%= submit "Log in" %>
   </div>
 <% end %>
 
 <p>
-  <%= link "Registreeri", to: Routes.user_registration_new_path(@conn, :new) %>
+  <%= link "Register", to: Routes.user_registration_new_path(@conn, :new) %>
 </p>

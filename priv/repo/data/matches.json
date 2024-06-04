@@ -25,7 +25,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 759,
@@ -84,7 +84,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2023-12-11T11:10:46Z",
     "homeTeam": {
       "id": 827,
@@ -143,7 +143,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 760,
@@ -202,7 +202,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 784,
@@ -261,7 +261,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 794,
@@ -320,7 +320,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 777,
@@ -379,7 +379,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 780,
@@ -438,7 +438,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 811,
@@ -497,7 +497,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 805,
@@ -556,7 +556,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 816,
@@ -615,7 +615,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 803,
@@ -674,7 +674,7 @@
     "status": "TIMED",
     "matchday": 1,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 765,
@@ -733,7 +733,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 799,
@@ -792,7 +792,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 759,
@@ -851,7 +851,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 8873,
@@ -910,7 +910,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 777,
@@ -969,7 +969,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 782,
@@ -1028,7 +1028,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 760,
@@ -1087,7 +1087,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 768,
@@ -1146,7 +1146,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 794,
@@ -1205,7 +1205,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 8601,
@@ -1264,7 +1264,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 1978,
@@ -1323,7 +1323,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 803,
@@ -1382,7 +1382,7 @@
     "status": "TIMED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 805,
@@ -1441,7 +1441,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 8873,
@@ -1500,7 +1500,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp A",
+    "group": "Group A",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 788,
@@ -1559,7 +1559,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 1065,
@@ -1618,7 +1618,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp B",
+    "group": "Group B",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 799,
@@ -1677,7 +1677,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 773,
@@ -1736,7 +1736,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp D",
+    "group": "Group D",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 8601,
@@ -1795,7 +1795,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 782,
@@ -1854,7 +1854,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp C",
+    "group": "Group C",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 770,
@@ -1913,7 +1913,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2024-03-27T00:21:33Z",
     "homeTeam": {
       "id": 790,
@@ -1972,7 +1972,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp E",
+    "group": "Group E",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 768,
@@ -2031,7 +2031,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2023-12-11T11:55:02Z",
     "homeTeam": {
       "id": 798,
@@ -2090,7 +2090,7 @@
     "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
-    "group": "Alagrupp F",
+    "group": "Group F",
     "lastUpdated": "2024-05-19T10:21:13Z",
     "homeTeam": {
       "id": 1978,

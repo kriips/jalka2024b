@@ -2,7 +2,7 @@ defmodule Jalka2024Web.Resolvers.FootballResolver do
   alias Jalka2024.{Football}
 
   def list_matches_by_group(group) do
-    Football.get_matches_by_group("Alagrupp #{group}")
+    Football.get_matches_by_group("Group #{group}")
   end
 
   def list_matches() do
@@ -112,12 +112,12 @@ defmodule Jalka2024Web.Resolvers.FootballResolver do
 
   def filled_predictions(user_id) do
     user_predictions = %{
-      "Alagrupp A" => 0,
-      "Alagrupp B" => 0,
-      "Alagrupp C" => 0,
-      "Alagrupp D" => 0,
-      "Alagrupp E" => 0,
-      "Alagrupp F" => 0
+      "Group A" => 0,
+      "Group B" => 0,
+      "Group C" => 0,
+      "Group D" => 0,
+      "Group E" => 0,
+      "Group F" => 0
     }
 
     Football.get_predictions_by_user(user_id)

@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'jalka2024'
+app = 'euros2024'
 primary_region = 'arn'
 kill_signal = 'SIGTERM'
 kill_timeout = '5s'
@@ -17,7 +17,7 @@ kill_timeout = '5s'
   release_command = '/app/bin/migrate'
 
 [env]
-  PHX_HOST = 'jalka2024.fly.dev'
+  PHX_HOST = 'euros2024.fly.dev'
   PORT = '8080'
 
 [http_service]

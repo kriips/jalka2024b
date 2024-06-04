@@ -7,20 +7,20 @@
     </div>
   <% end %>
 
-  <%= label f, :password, "Uus parool" %>
+  <%= label f, :password, "New password" %>
   <%= password_input f, :password, required: true %>
   <%= error_tag f, :password %>
 
-  <%= label f, :password_confirmation, "Kinnita parool" %>
+  <%= label f, :password_confirmation, "Repeat password" %>
   <%= password_input f, :password_confirmation, required: true %>
   <%= error_tag f, :password_confirmation %>
 
   <div>
-    <%= submit "Lähtesta parool" %>
+    <%= submit "Reset password" %>
   </div>
 <% end %>
 
 <p>
-  <%= link "Registreeri", to: Routes.user_registration_new_path(@conn, :new) %> |
-  <%= link "Sisene", to: Routes.user_session_path(@conn, :new) %>
+  <%= link "Register", to: Routes.user_registration_new_path(@conn, :new) %> |
+  <%= link "Log in", to: Routes.user_session_path(@conn, :new) %>
 </p>

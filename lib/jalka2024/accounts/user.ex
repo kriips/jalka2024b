@@ -88,7 +88,7 @@ defmodule Jalka2024.Accounts.User do
 
   defp check_whitelist(changeset) do
     case Accounts.get_allowed_users_exactly_by_name(get_field(changeset, :name)) do
-      [] -> add_error(changeset, :name, "ei kuulu nimekirja")
+      [] -> add_error(changeset, :name, "not in list")
       _ -> changeset
     end
   end

@@ -12,7 +12,7 @@ IO.inspect("getting to test config")
 config :jalka2024, Jalka2024.Repo,
   username: "postgres",
   password: "postgres",
-  database: "jalka2024_test#{System.get_env("MIX_TEST_PARTITION")}",
+  database: "jalka2024b_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 

@@ -60,8 +60,7 @@ case Config.config_env() do
       live_view: [signing_salt: signing_salt],
       server: true,
       check_origin: [
-        "//jalka2022.fly.dev",
-        "//jalka.eys.ee"
+        "//euros2024.fly.dev"
       ]
 
     config :libcluster,

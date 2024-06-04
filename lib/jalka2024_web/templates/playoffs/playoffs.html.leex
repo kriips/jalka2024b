@@ -3,11 +3,11 @@
    <%= for {phase, teams_predictions} <- @predictions do %>
    <h3>
       <%= case phase do
-              1 -> "Võitja"
-              2 -> "Finalistid"
-              4 -> "Poolfinalistid"
-              8 -> "Veerandfinalistid"
-              16 -> "Kaheksandikfinalistid"
+              1 -> "Winner"
+              2 -> "Finalists"
+              4 -> "Semi-finalists"
+              8 -> "Quarter-finalists"
+              16 -> "Round of 16"
             end%>
    </h3>
    <%= for {team_name, reached_phase, users} <- teams_predictions do %>

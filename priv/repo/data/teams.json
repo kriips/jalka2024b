@@ -7,7 +7,7 @@
       "flag": "https://crests.football-data.org/759.svg"
     },
     "id": 759,
-    "name": "Saksamaa",
+    "name": "Germany",
     "shortName": "Germany",
     "group": "A",
     "tla": "GER",
@@ -240,7 +240,7 @@
       "flag": "https://crests.football-data.org/760.svg"
     },
     "id": 760,
-    "name": "Hispaania",
+    "name": "Spain",
     "shortName": "Spain",
     "group": "B",
     "tla": "ESP",
@@ -326,7 +326,7 @@
       "flag": null
     },
     "id": 768,
-    "name": "Slovakkia",
+    "name": "Slovakia",
     "shortName": "Slovakia",
     "group": "E",
     "tla": "SVK",
@@ -369,7 +369,7 @@
       "flag": "https://crests.football-data.org/770.svg"
     },
     "id": 770,
-    "name": "Inglismaa",
+    "name": "England",
     "shortName": "England",
     "group": "C",
     "tla": "ENG",
@@ -412,7 +412,7 @@
       "flag": "https://crests.football-data.org/773.svg"
     },
     "id": 773,
-    "name": "Prantsusmaa",
+    "name": "France",
     "shortName": "France",
     "group": "D",
     "tla": "FRA",
@@ -631,7 +631,7 @@
       "flag": null
     },
     "id": 777,
-    "name": "Sloveenia",
+    "name": "Slovenia",
     "shortName": "Slovenia",
     "group": "C",
     "tla": "SVN",
@@ -717,7 +717,7 @@
       "flag": "https://crests.football-data.org/782.svg"
     },
     "id": 782,
-    "name": "Taani",
+    "name": "Denmark",
     "shortName": "Denmark",
     "group": "C",
     "tla": "DEN",
@@ -760,7 +760,7 @@
       "flag": "https://crests.football-data.org/784.svg"
     },
     "id": 784,
-    "name": "Itaalia",
+    "name": "Italy",
     "shortName": "Italy",
     "group": "B",
     "tla": "ITA",
@@ -803,7 +803,7 @@
       "flag": "https://crests.football-data.org/788.svg"
     },
     "id": 788,
-    "name": "Šveits",
+    "name": "Switzerland",
     "shortName": "Switzerland",
     "group": "A",
     "tla": "SUI",
@@ -1113,7 +1113,7 @@
       "flag": "https://crests.football-data.org/790.svg"
     },
     "id": 790,
-    "name": "Ukraina",
+    "name": "Ukraine",
     "shortName": "Ukraine",
     "group": "E",
     "tla": "UKR",
@@ -1156,7 +1156,7 @@
       "flag": "https://crests.football-data.org/794.svg"
     },
     "id": 794,
-    "name": "Poola",
+    "name": "Poland",
     "shortName": "Poland",
     "group": "D",
     "tla": "POL",
@@ -1199,7 +1199,7 @@
       "flag": "https://crests.football-data.org/798.svg"
     },
     "id": 798,
-    "name": "Tšehhi",
+    "name": "Czechia",
     "shortName": "Czechia",
     "group": "F",
     "tla": "CZE",
@@ -1242,7 +1242,7 @@
       "flag": "https://crests.football-data.org/799.svg"
     },
     "id": 799,
-    "name": "Horvaatia",
+    "name": "Croatia",
     "shortName": "Croatia",
     "group": "B",
     "tla": "CRO",
@@ -1285,7 +1285,7 @@
       "flag": "https://crests.football-data.org/803.svg"
     },
     "id": 803,
-    "name": "Türgi",
+    "name": "Turkey",
     "shortName": "Turkey",
     "group": "F",
     "tla": "TUR",
@@ -1328,7 +1328,7 @@
       "flag": "https://crests.football-data.org/805.svg"
     },
     "id": 805,
-    "name": "Belgia",
+    "name": "Belgium",
     "shortName": "Belgium",
     "group": "E",
     "tla": "BEL",
@@ -1371,7 +1371,7 @@
       "flag": "https://crests.football-data.org/811.svg"
     },
     "id": 811,
-    "name": "Rumeeenia",
+    "name": "Romania",
     "shortName": "Romania",
     "group": "E",
     "tla": "ROU",
@@ -1457,7 +1457,7 @@
       "flag": "https://crests.football-data.org/827.svg"
     },
     "id": 827,
-    "name": "Ungari",
+    "name": "Hungary",
     "shortName": "Hungary",
     "group": "A",
     "tla": "HUN",
@@ -1683,7 +1683,7 @@
       "flag": null
     },
     "id": 1065,
-    "name": "Albaania",
+    "name": "Albania",
     "shortName": "Albania",
     "group": "B",
     "tla": "ALB",
@@ -1726,7 +1726,7 @@
       "flag": null
     },
     "id": 1978,
-    "name": "Gruusia",
+    "name": "Georgia",
     "shortName": "Georgia",
     "group": "F",
     "tla": "GEO",
@@ -1769,7 +1769,7 @@
       "flag": "https://crests.football-data.org/8601.svg"
     },
     "id": 8601,
-    "name": "Holland",
+    "name": "Netherlands",
     "shortName": "Netherlands",
     "group": "D",
     "tla": "NED",
@@ -2002,7 +2002,7 @@
       "flag": "https://crests.football-data.org/814.svg"
     },
     "id": 8873,
-    "name": "Šotimaa",
+    "name": "Scotland",
     "shortName": "Scotland",
     "group": "A",
     "tla": "SCO",

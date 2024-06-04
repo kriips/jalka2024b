@@ -2,69 +2,66 @@
   <div class="container">
     <div class="row">
       <div class="column">
-        <h4>Jalgpalli EM 2024 ennustusvõistluse reeglid</h4>
+        <h4>Bolt Compliance Euro2024 prediction</h4>
         <ol>
           <li>
-            Iga seltsivend võib täita ühe ennustuse.
+            Every participant can fulfil only one prediction
           </li>
           <li>
-            Ennustus tuleb täita enne EM-finaalturniiri esimese kohtumise algust (hiljemalt 14. juunil kell 21.59) ja seda on võimalik tolle kellaajani muuta.
+            The prediction has to be filled before the start of the first match of the Euros (latest at 14th of June at 21.59). It's possible to change it until that time.
           </li>
           <li>
-            Osalustasu on 10 eurot ja see tuleb M!E! kontole (Eesti Üliõpilaste Selts, EE817700771007042167) üle kanda enne esimese kohtumise algust. Mängijad, kelle osalustasu pole õigeks ajaks laekunud, ankeedid kustutakse ilma edasikaebamisõiguseta.
-          </li>
-          <li>
-            Auhinnafond jaguneb järgmiselt: 1. koht 45%, 2. koht 25%, 3. koht 15%, 4.-6. koht igaüks 5%.
+            Prizes for top 3
           </li>
         </ol>
         <h4>
-          Punktisüsteem:
+          Scoring:
         </h4>
         <ul>
           <li>
-            alagrupiturniiril õige tulemus 1X2 meetodil annab 1 punkti + õige skoor 1 punkti; kokku on alagrupiturniiril 36 mängu, seega võimalik teenida 72 punkti
+            correct 1x2 group stage prediction gives 1 point + correct score 1 point; group stage has 36 games so maximum total from that phase is 72 points
           </li>
           <li>
-            iga õige kaheksandikfinalist annab 1 punkti (16)
+            every correct round of 16 team gives 1 point (16)
           </li>
           <li>
-            iga õige veerandfinalist annab 3 punkti (24)
+            every correct quarter-finalist gives 3 points (24)
           </li>
           <li>
-            iga õige poolfinalist annab 5 punkti (20)
+            every correct semi-finalist gives 5 points (20)
           </li>
           <li>
-            iga õige finalist annab 6 punkti (12)
+            every correct finalist gives 6 points (12)
           </li>
           <li>
-            õige Euroopa meister annab 8 punkti (8)
+            correct winner gives 8 points (8)
           </li>
         </ul>
-        Kokku on seega võimalik teenida 152 punkti. Võrdsete punktide puhul pannakse paremusjärjestus paika Eurovisiooni meetodil (kel on rohkem õigeid kõrgema väärtusega vastuseid). Kui 3-, 5-, 6- ja 8-punktiliste õigete pakkumiste arv on võrdne, on tulemuseks viik.
+        In total it's possible to earn 152 points. In case of equal points ranking is based on Eurovision method (who has most higher value correct predictions). If all correct play off round predictions count are the same it results in a draw.
       </div>
     </div>
     <hr />
     <div class="row">
       <div class="column">
         <%= live_redirect to: Routes.user_prediction_navigate_path(@socket, :navigate) do %>
-          <button class="button-large button-outline button-main">Ennusta</button>
+          <button class="button-large button-outline button-main">Predict</button>
         <% end %>
       </div>
       <div class="column column-offset-5">
         <%= live_redirect to: Routes.leaderboard_leaderboard_path(@socket, :view) do %>
-          <button class="button-large button-outline button-main">Edetabel</button>
+          <button class="button-large button-outline button-main">Rankings</button>
         <% end %>
       </div>
     </div>
     <div class="row">
       <div class="column">
         <%= live_redirect to: Routes.football_games_path(@socket, :view) do %>
-          <button class="button-large button-outline button-main">Alagrupimängud</button>
+          <button class="button-large button-outline button-main">Group stage</button>
         <% end %>
       </div>
       <div class="column column-offset-5">
         <%= live_redirect to: Routes.football_playoffs_path(@socket, :view) do %>
-          <button class="button-large button-outline button-main">Playoff-mängud</button>
+          <button class="button-large button-outline button-main">Playoff stage</button>
         <% end %>
       </div>
     </div>

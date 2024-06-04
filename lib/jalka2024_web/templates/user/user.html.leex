@@ -2,14 +2,14 @@
     <h1>
         <%= @user.name %>
     </h1>
-    <h2>Alagrupid</h2>
+    <h2>Groups</h2>
     <table>
         <thead>
             <tr>
-                <th>Võistkonnad</th>
-                <th>Tulemus</th>
-                <th>Õige tulemus</th>
-                <th>Õige skoor</th>
+                <th>Teams</th>
+                <th>Result</th>
+                <th>Correct result</th>
+                <th>Correct score</th>
             </tr>
         </thead>
         <tbody>
@@ -35,19 +35,19 @@
             <% end %>
         </tbody>
     </table>
-    <h2>Playoffid</h2>
-    <h3>Kaheksandikfinalistid</h3>
+    <h2>Playoffs</h2>
+    <h3>Round of 16</h3>
     <%= raw(Enum.join(@playoff_predictions[16], ", ")) %>
     <hr>
-    <h3>Veerandfinalistid</h3>
+    <h3>Quarter-finalists</h3>
     <%= raw(Enum.join(@playoff_predictions[8], ", ")) %>
     <hr>
-    <h3>Poolfinalistid</h3>
+    <h3>Semi-finalists</h3>
     <%= raw(Enum.join(@playoff_predictions[4], ", ")) %>
     <hr>
-    <h3>Finalistid</h3>
+    <h3>Finalists</h3>
     <%= raw(Enum.join(@playoff_predictions[2], ", ")) %>
     <hr>
-    <h3>Võitja</h3>
+    <h3>Winner</h3>
     <%= raw(Enum.join(@playoff_predictions[1], ", ")) %>
 </main>
