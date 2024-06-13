@@ -61,7 +61,7 @@ defmodule Jalka2024.Seed do
       _ -> Mix.Project.app_path()
     end
     if Code.ensure_compiled(Jalka2024.Accounts.AllowedUser) &&
-         Jalka2024.Accounts.AllowedUser |> Jalka2024.Repo.aggregate(:count, :id) <= 54 do
+         Jalka2024.Accounts.AllowedUser |> Jalka2024.Repo.aggregate(:count, :id) <= 55 do
       Enum.each(
         Jason.decode!(File.read!('#{prefix}/priv/repo/data/allowed_users2.json')),
         fn attrs ->
