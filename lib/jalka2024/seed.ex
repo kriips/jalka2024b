@@ -1,5 +1,5 @@
 defmodule Jalka2024.Seed do
-
+  require Logger
   def seed do
     prefix = case Application.get_env(:jalka2024, :environment) do
       :prod -> "/app/lib/jalka2024-0.1.0"
@@ -62,6 +62,7 @@ defmodule Jalka2024.Seed do
     end
     if Code.ensure_compiled(Jalka2024.Accounts.AllowedUser) &&
          Jalka2024.Accounts.AllowedUser |> Jalka2024.Repo.aggregate(:count, :id) <= 55 do
+      Logger.info("Adding secondary seed data...")
       Enum.each(
         Jason.decode!(File.read!('#{prefix}/priv/repo/data/allowed_users2.json')),
         fn attrs ->
