@@ -43,12 +43,12 @@
     <hr />
     <div class="row">
       <div class="column">
-        <%= live_redirect to: Routes.user_prediction_navigate_path(@socket, :navigate) do %>
-          <button class="button-large button-outline button-main">Predict</button>
-        <% end %>
+          <button disabled class="button-large button-outline button-main">Predict</button>
       </div>
       <div class="column column-offset-5">
-          <button disabled class="button-large button-outline button-main">Rankings</button>
+        <%= live_redirect to: Routes.leaderboard_leaderboard_path(@socket, :view) do %>
+          <button class="button-large button-outline button-main">Rankings</button>
+        <% end %>
       </div>
     </div>
     <div class="row">
